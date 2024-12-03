@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Create Your Account</title>
+        <link rel="stylesheet" href="styles/style1.css">
+        <link rel="stylesheet" href="styles/style2a.css">
+        <script>
+     
+            function handleSubmit(event) {
+                event.preventDefault(); 
+                alert("Your account has been successfully created. Check your email for the latest updates!");
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="menu">
+                <ul>
+                   <li><a href="index2.html" class="myA">HOME</a><li> 
+                   <li><a href="create2.html" class="myA">Create your Account</a></li>
+                   <li><a href="retrieve2.html" class="myA">My Cart</a></li>
+                   <li><a href="update2.html" class="myA">Shop Now</a></li>
+                   <li><a href="delete2.html" class="myA">My Account</a></li>
+                   <li><a href="about2.html" class="myA">About the company MakeupDealz</a></li>
+                </ul>
+            </div>
+            <div class="meat">
+                <h2 class="myH2">Get Started: Create your Account</h2>
+                <img class="myImg" src="images/topmakeup.jpg" alt="Makeup Image" style="width: 100%; max-width: 600px; height: auto;">
+                <form onsubmit="handleSubmit(event)">
+                    <input type="text" placeholder="Name" required class="myTextFont myPinkBackground myTextWidth"><br>
+                    <input type="number" placeholder="Age" required><br>
+                    <textarea placeholder="Email" required></textarea><br>
+                    <input type="radio" name="status" value="married">Married<br>
+                    <input type="radio" name="status" value="single">Single<br>
+                    Sign up for email alerts including exclusive deals and offers:
+                    <select>
+                        <option>Yes</option>
+                        <option>No</option>
+                    </select><br>
+                    <input type="checkbox" value="tos" required>I have read the terms of service<br>
+                    Birthdate: <input type="date" required><br>
+                    <input type="submit" value="Submit" class="myTextFont myPinkBackground myTextWidth"><br>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

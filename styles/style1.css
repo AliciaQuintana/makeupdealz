@@ -1,0 +1,75 @@
+.myH2 {font-family:courier; font-size:24pt; color:blue; text-align: left}
+.myImg {width: 256px;display:block;margin: auto}
+.myP {font-family:Arial; font-size:12pt; color:red; text-align:left}
+.myH2a {font-family:Arial;color:orange}
+.myH2b {font-family:Arial;color:greenyellow}
+.myA {color:black}
+.myA:hover {color:skyblue}
+.myTextFont {font-family:Arial;font-weight:bold;font-size:14pt;color:blue}
+.myPinkBackground {background:lightpink}
+.myTextWidth {width:25%}
+.deals-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.deal-item {
+    text-align: center;
+    width: 150px;
+}
+
+.deal-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.deal-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.deal-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.deal-image {
+    max-width: 200px; 
+    height: auto;
+    margin: 10px; 
+}
+
+.deal-items {
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+
+.product-card {
+    text-align: center;
+    margin: 10px; 
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.item-img {
+    width: 100px;  
+    height: auto;  
+    object-fit: cover; 
+}

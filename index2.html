@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        <title>MakeupDealz Home</title>
+        <link rel="stylesheet" href="styles/style1.css">
+        <link rel="stylesheet" href="styles/style2a.css">
+        <style>
+            .center {
+                text-align: center;
+            }
+            .large-img {
+                width: 100%;
+                max-width: 600px;
+                display: block;
+                margin: 0 auto;
+            }
+            .features-container, .deals-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                margin-top: 20px;
+            }
+            .feature-box, .deal-item {
+                text-align: center;
+                width: 200px;
+                border: 1px solid #ccc;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            .feature-box img, .deal-item img {
+                width: 100%;
+                height: auto;
+                cursor: pointer;
+            }
+            .deal-item p, .feature-box p {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="menu">
+                <ul>
+                    <li><a href="index2.html" class="myA">HOME</a></li> 
+                    <li><a href="create2.html" class="myA">Create your Account</a></li>
+                    <li><a href="retrieve2.html" class="myA">My Cart</a></li>
+                    <li><a href="update2.html" class="myA">Shop Now</a></li>
+                    <li><a href="delete2.html" class="myA">My Account</a></li>
+                    <li><a href="about2.html" class="myA">About the company MakeupDealz</a></li>
+                </ul>
+            </div>
+
+            <div class="meat center">
+                <h2>MakeupDealz Mobile App</h2>
+                <img class="large-img" src="images/homepage.jpeg" alt="Makeup products">
+
+                <h2>MakeupDealz = High Quality Makeup</h2>
+                <p>Offering only the best high-quality makeup products.</p>
+
+                <h2>Features</h2>
+                <div class="features-container">
+                    <div class="feature-box">
+                        <a href="retrieve2.html">
+                            <img src="images/indexmakeup.jpeg" alt="My Cart">
+                        </a>
+                        <p>My Cart</p>
+                    </div>
+                    <div class="feature-box">
+                        <a href="update2.html">
+                            <img src="images/shop.jpeg" alt="Shop">
+                        </a>
+                        <p>Shop</p>
+                    </div>
+                    <div class="feature-box">
+                        <a href="delete2.html">
+                            <img src="images/indexmakeup.jpeg" alt="My Account">
+                        </a>
+                        <p>My Account</p>
+                    </div>
+                </div>
+
+                <h2>This Week's Deals</h2>
+                <div class="deals-container">
+                    <div class="deal-item">
+                        <a href="update2.html">
+                            <img src="images/minis1.jpeg" alt="Deal 1">
+                        </a>
+                        <p>New $10 Minis</p>
+                    </div>
+                    <div class="deal-item">
+                        <a href="update2.html">
+                            <img src="images/Tarte.jpg" alt="Deal 2">
+                        </a>
+                        <p>40% off Tarte</p>
+                    </div>
+                    <div class="deal-item">
+                        <a href="update2.html">
+                            <img src="images/Maybelline.jpeg" alt="Deal 3">
+                        </a>
+                        <p>3 for $12 Maybelline Lip Products</p>
+                    </div>
+                    <div class="deal-item">
+                        <a href="update2.html">
+                            <img src="images/skincare.jpg" alt="Deal 4">
+                        </a>
+                        <p>Skincare Deals for Winter</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
