@@ -1,0 +1,34 @@
+.main     { display:flex; flex-direction:column }
+.menu     { background:pink;width:100% }
+.meat     { background:lightblue;width:100% }
+li        { display:inline }
+li::after  { content: "  |  " }
+.deals-container {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.deal-item {
+    text-align: center;
+    width: 150px;
+}
+
+.deal-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.deal-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.deal-item a {
+    text-decoration: none;
+    color: inherit;
+}

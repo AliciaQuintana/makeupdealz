@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My Account</title>
+        <link rel="stylesheet" href="styles/style1.css">
+        <link rel="stylesheet" href="styles/style2a.css">
+        <style>
+            .lighter-text {
+                font-weight: 300;
+                color: #888;
+            }
+
+            .welcome-section {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .white-box {
+                background-color: white;
+                color: black;
+                padding: 10px;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .white-box-black-font {
+                color: black;
+                padding: 10px;
+                text-align: center;
+                margin-top: 10px;
+            }
+
+            .image-section {
+                width: 100%;
+                max-width: 600px;
+                display: block;
+                margin: 0 auto;
+                margin-top: 20px;
+            }
+
+            .pink-box {
+                background-color: #ff69b4;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                margin-top: 30px;
+            }
+
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+
+            .flex-container p {
+                margin: 0;
+            }
+
+            .small-font {
+                font-size: 0.9em;
+            }
+
+            .personal-info {
+                margin-top: 20px;
+                padding: 20px;
+                border-top: 2px solid #ff69b4;
+                display: none; 
+            }
+
+            .personal-info h3 {
+                font-weight: bold;
+            }
+
+            .form-group {
+                margin-bottom: 15px;
+            }
+
+            .form-group label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 8px;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+          
+            .passcode-section {
+                margin-top: 20px;
+            }
+
+            .passcode-section h4 {
+                color: #ff69b4;
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+
+            .passcode-box {
+                background-color: white;
+                color: black;
+                padding: 10px;
+                margin-top: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                text-align: left; 
+            }
+
+            .change-passcode-btn {
+                background-color: #ff69b4;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                font-size: 1em;
+                width: 100%;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+
+            .change-passcode-btn:hover {
+                background-color: #ff1493;
+            }
+
+         
+            button {
+                background-color: #ff69b4;
+                color: white;
+                padding: 12px 30px;
+                font-size: 18px;
+                text-align: center;
+                border: none;
+                border-radius: 5px;
+                width: auto;
+                cursor: pointer;
+                margin: 20px 0;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            button:hover {
+                background-color: #ff1493;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" class="myA">HOME</a></li> 
+                    <li><a href="create.html" class="myA">Create your Account</a></li>
+                    <li><a href="retrieve.html" class="myA">My Cart</a></li>
+                    <li><a href="update.html" class="myA">Shop Now</a></li>
+                    <li><a href="delete.html" class="myA">My Account</a></li>
+                    <li><a href="about.html" class="myA">About the company MakeupDealz</a></li>
+                </ul>
+            </div>
+
+            <div class="meat center">
+               
+                <div class="welcome-section">
+                    <h2>Welcome Back, Alicia!</h2>
+                    <strong>500 points</strong>
+                </div>
+
+              
+                <p class="lighter-text">Platinum Member since 2022</p>
+
+               
+                <h2>This is where you can manage your account details and update or delete your preferences</h2>
+
+               
+                <img class="image-section" src="images/fenty.jpeg" alt="Holiday Offer">
+                <div class="white-box">
+                    <p>Ends Dec 25</p>
+                    <p class="white-box-black-font">MEMBER HOLIDAY APPRECIATION</p>
+                    <p class="white-box-black-font" style="font-weight: bold;">Members earn up to 5x more points until Christmas</p>
+                    <p class="white-box-black-font small-font">Earn extra points on all services and purchases.</p>
+                </div>
+
+              
+                <img class="image-section" src="images/dyson.jpg" alt="Member Exclusive Offer">
+                <div class="white-box">
+                    <p>Ends Jan 1</p>
+                    <p class="white-box-black-font">MEMBER EXCLUSIVE</p>
+                    <p class="white-box-black-font">20% off Dyson</p>
+                    <p class="white-box-black-font small-font">In Store & Online. Use code: DYSON20</p>
+                </div>
+
+            
+                <div class="pink-box">
+                    <h3>$5.00 off $25</h3>
+                    <p>Use code: 5OFF</p>
+                </div>
+
+              
+                <div class="flex-container">
+                    <div>
+                        <p>MakeupDealz Beauty Rewards</p>
+                        <p class="small-font">500 points = $17</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <p>Platinum Member</p>
+                    </div>
+                </div>
+
+               
+                <button id="view-info-btn" onclick="showPersonalInfo()">View My Personal Info</button>
+
+                
+                <div class="personal-info" id="personal-info">
+                    <h3>My Personal Information</h3>
+
+                    <h4 class="lighter-text">Shipping Preference</h4>
+                    <div class="form-group">
+                        <label>Address:</label>
+                        <input type="text" value="123 Main Street" />
+                    </div>
+                    <div class="form-group">
+                        <label>City:</label>
+                        <input type="text" value="Springfield" />
+                    </div>
+                    <div class="form-group">
+                        <label>State:</label>
+                        <input type="text" value="IL" />
+                    </div>
+                    <div class="form-group">
+                        <label>Zip Code:</label>
+                        <input type="text" value="62704" />
+                    </div>
+
+                    <h4 class="lighter-text">Payment Method</h4>
+                    <div class="form-group">
+                        <label>Credit Card Number:</label>
+                        <input type="text" value="4111 1111 1111 1111" />
+                    </div>
+                    <div class="form-group">
+                        <label>CVV:</label>
+                        <input type="text" value="123" />
+                    </div>
+                    <div class="form-group">
+                        <label>Expiration Date:</label>
+                        <input type="text" value="12/25" />
+                    </div>
+
+                    
+                    <div class="passcode-section">
+                        <h4 class="lighter-text">Passcode Information</h4>
+                        <div class="passcode-box">
+                            <p><strong>Current Passcode:</strong> 1234</p>
+                            <p><strong>Change Passcode:</strong></p>
+                            <div class="form-group">
+                                <input type="text" placeholder="Change Passcode" />
+                            </div>
+                            <button class="change-passcode-btn">Change Passcode</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+          
+            function showPersonalInfo() {
+                var password = prompt("Enter your passcode:");
+                if (password === "1234") {
+                    document.getElementById("personal-info").style.display = "block";
+                    document.getElementById("view-info-btn").style.display = "none"; 
+                } else {
+                    alert("Incorrect passcode. Please try again.");
+                }
+            }
+        </script>
+    </body>
+</html>
